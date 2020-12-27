@@ -1,0 +1,7 @@
+*.session*
+pids/
+gui/node_modules/
+*.jpg
+*.png
+telegram/
+*.json
