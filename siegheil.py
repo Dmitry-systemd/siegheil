@@ -136,7 +136,7 @@ def raidseq(target, msg, pause, sessions, file):
 	clients = []
 	print ("стартую клиенты...")
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16"))
 	for client in clients:
 			client.start()
 	exit1 = 0
@@ -194,7 +194,7 @@ def validate(sessions):
 	for session in sessions:
 		pid = os.fork()
 		if pid == 0:
-			client = TelegramClient(session, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d")
+			client = TelegramClient(session, 21724 "3e0cb5efcd52300aec5994fdfc5bdc16")
 			client.start()
 			client.get_entity('me')
 			f = open('.tmp', "a+") 
@@ -205,7 +205,7 @@ def validate(sessions):
 		os.kill(pid, 9)
 
 def getdialog(sessions, target):
-	client = TelegramClient(sessions[0], 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d")
+	client = TelegramClient(sessions[0], 21724, "3e0cb5efcd52300aec5994fdfc5bdc16")
 	client.start()
 	
 	for a in client.iter_dialogs():
@@ -217,7 +217,7 @@ def getdialog(sessions, target):
 def getnumber(sessions):
 	clients = []
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "8da85b0d5bfe62527e5b244c209159c3"))
 
 	x=0
 	for client in clients:
@@ -229,7 +229,7 @@ def getnumber(sessions):
 def read(sessions, target):
 	clients = []
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "8da85b0d5bfe62527e5b244c209159c3"))
 
 	x=0
 	for client in clients:
@@ -242,7 +242,7 @@ def read(sessions, target):
 			try:
 				client(ImportChatInviteRequest(target))
 			except:
-				print ("эй втсофт с огромным хером у меня проблема " + str(e))
+				print ("эй theerha с огромным хером у меня проблема " + str(e))
 				entity = client.get_entity('https://t.me/joinchat/' + target)
 		ids = []
 
@@ -268,7 +268,7 @@ def read(sessions, target):
 def setpic(sessions, file):
 	clients = []
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16"))
 	x = 0
 	for client in clients:
 		print(sessions[x])
@@ -285,7 +285,7 @@ def join(sessions, target, pause):
 	clients = []
 
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16"))
 	x = 0
 	for client in clients:
 		print(sessions[x])
@@ -310,7 +310,7 @@ def join(sessions, target, pause):
 				else:
 					time.sleep(pause)
 def raid(target, msg, pause, session, file):
-	client = TelegramClient(session, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d")
+	client = TelegramClient(session, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16")
 	client.start()
 	if '@' in target:
 		entity=client.get_entity(target)
@@ -357,7 +357,7 @@ def db(target, sessions, file):
 
 	clients = []
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16"))
 
 	for client in clients:
 		client.start()
@@ -406,7 +406,7 @@ def spamseq(target, msg, pause, sessions, file):
 
 	clients = []
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16"))
 	for client in clients:
 		client.start()
 
@@ -430,13 +430,13 @@ def spamseq(target, msg, pause, sessions, file):
 				else:
 					client.send_message(entity=entity, message=msg) 
 			except Exception as e:
-				print ("эй втсофт с огромным хером у меня проблема " + str(e))
+				print ("эй theerha с огромным хером у меня проблема " + str(e))
 				break
 
 def setname(sessions, msg):
 	clients = []
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16"))
 	for client in clients:
 		client.start()
 		client(functions.account.UpdateProfileRequest(
@@ -446,7 +446,7 @@ def setname(sessions, msg):
 		))
 from telethon.tl.types import ChannelParticipantsSearch
 def lol(session):
-	client = TelegramClient(session[0], 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d")
+	client = TelegramClient(session[0], 21724, "3e0cb5efcd52300aec5994fdfc5bdc16")
 	client.start()
 	channel = client.get_entity('@linuxsucks')
 	participants = client(GetParticipantsRequest(
@@ -460,7 +460,7 @@ def lol(session):
 def checkban(sessions, target):
 	clients = []
 	for user in sessions:
-		clients.append(TelegramClient(user, 1796543, "3bdc204a7f37a225c5a08a6edcf3fe4d"))
+		clients.append(TelegramClient(user, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16"))
 
 	x=0
 	for client in clients:
