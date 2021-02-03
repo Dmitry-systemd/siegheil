@@ -63,5 +63,5 @@ Cтарая версия бота ЗигХайль которая была на 
 
 
 ПРИМЕР КОМАНДЫ
-sudo python3 siegheil.py --target @example --mode raid --msg vasya --pause 0- -sessions @all - команда для рейдов,будет спамить сообщение "vasya" в чат "example"
+sudo python3 siegheil.py --target @example --mode raid --msg vasya --pause 0-0 --sessions @all - команда для рейдов,будет спамить сообщение "vasya" в чат "example"
 
